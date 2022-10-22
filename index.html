@@ -459,13 +459,11 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-title">Підпишіться на розсилку</p>
-          <form name="subscribe-form">
-            <label for=""></label>
+          <form class="subscribe-form">
             <input
               class="subscribe-email"
               type="email"
               name="email"
-              id="user-email"
               placeholder="E-mail"
             />
             <button type="submit" class="subscribe-btn btn">
@@ -485,6 +483,19 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="modal-wrapper">
+          <p class="form-descr">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="modal-form">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail" />
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
