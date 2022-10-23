@@ -459,7 +459,7 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-title">Підпишіться на розсилку</p>
-          <form class="subscribe-form">
+          <form class="subscribe-form" autocomplete="off">
             <input
               class="subscribe-email"
               type="email"
@@ -530,6 +530,22 @@
                 id="feedback"
                 placeholder="Введіть текст"
               ></textarea>
+            </div>
+            <label class="checkbox-label">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="condition"
+                value="accept"
+              />
+              <span class="checkbox-icon"></span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a>
+            </label>
+            <div class="wrapper-btn">
+              <button class="modal-form-button btn" type="submit">
+                Відправити
+              </button>
             </div>
           </form>
         </div>
