@@ -484,16 +484,53 @@
           </svg>
         </button>
         <div class="modal-wrapper">
-          <p class="form-descr">Залиште свої дані, ми вам передзвонимо</p>
-          <form class="modal-form">
-            <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" />
-
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
-
-            <label for="mail">Пошта</label>
-            <input type="email" name="mail" id="mail" />
+          <p class="modal-descr">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="modal-form" autocomplete="off">
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="username"
+                id="username"
+              />
+              <label class="modal-form-label" for="username"> Ім'я</label>
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="phone_number"
+                id="tel"
+              />
+              <label class="modal-form-label" for="tel">Телефон</label>
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="modal-form-field">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="mail"
+                id="mail"
+              />
+              <label class="modal-form-label" for="mail">Пошта</label>
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="modal-form-field">
+              <label class="modal-form-label" for="feedback">Коментар</label>
+              <textarea
+                class="modal-form-textarea"
+                name="feedback"
+                id="feedback"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
           </form>
         </div>
       </div>
